@@ -5,6 +5,7 @@ RUN apk add --no-cache git vim \
     && cd /usr/src/app \
     && git clone https://github.com/stephomi/sculptgl.git \
     && cd sculptgl \
+    && npm install -g ajv \
     && npm install
 
 WORKDIR /usr/src/app/sculptgl
