@@ -1,3 +1,5 @@
+This is a docker images for Stephane Ginier 3D modeling tool named sculptGL.
+
 ## about SculptGL
 
 [SculptGL](https://github.com/stephomi/sculptgl) is a digital sculpting web app, with sources available on github.
