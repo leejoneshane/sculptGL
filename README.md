@@ -25,12 +25,12 @@ Sketchfab made a fork of the old SculptGL version with a new design : Sculptfab.
     + In case of a non closed mesh, a naive holefilling algorithm is performed first
     + Deletes UV
 - Dynamic topology
-> Triangles only
-> Operates in real time
-> Local subdivision (create new triangles)
-> Local decimation (deletes triangles)
-> Deletes UV
+    + Triangles only
+    + Operates in real time
+    + Local subdivision (create new triangles)
+    + Local decimation (deletes triangles)
+    + Deletes UV
 - Supports OBJ, PLY, STL import/export
-> Reads vertex color
-> Optimizes post and pre transform cache (tipsy algorithm)
+    + Reads vertex color
+    + Optimizes post and pre transform cache (tipsy algorithm)
 - Undo/Redo support
