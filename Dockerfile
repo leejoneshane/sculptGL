@@ -7,7 +7,7 @@ RUN apk add --no-cache git vim \
     && cd sculptgl \
     && npm install
 
-WORKDIR /usr/src/app/scratch-gui
+WORKDIR /usr/src/app/sculptgl
 EXPOSE 80
 VOLUME ["/usr/src/app"]
 CMD ["npm","run,"dev"]
