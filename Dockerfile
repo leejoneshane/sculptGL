@@ -11,6 +11,6 @@ RUN apk add --no-cache git vim \
     && npm run release
 
 WORKDIR /usr/src/app/sculptgl
-EXPOSE 8080
+EXPOSE 80
 VOLUME ["/usr/src/app"]
-CMD ["./node_modules/.bin/webpack-dev-server"]
+CMD ["./node_modules/.bin/webpack-dev-server --host 0.0.0.0 --port 80"]
