@@ -1,5 +1,5 @@
 FROM node:alpine
-
+ENV DEBUG 'express:*'
 RUN apk add --no-cache git vim \
     && mkdir -p /usr/src/app \
     && cd /usr/src/app \
