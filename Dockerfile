@@ -6,7 +6,7 @@ RUN apk add --no-cache git vim \
     && git clone https://github.com/stephomi/sculptgl.git \
     && cd sculptgl \
     && npm install \
-    && npm install webpack@^4.9.1 webpack-cli webpack-dev-server --save-dev \
+    && npm install -g webpack@^4.9.1 webpack-cli webpack-dev-server \
     && sed -ri -e "s!\\\\\\\\!/!g" /usr/src/app/sculptgl/package.json \
     && npm run release
 
