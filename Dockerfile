@@ -11,4 +11,4 @@ RUN apk add --no-cache git vim \
 WORKDIR /usr/src/app/sculptgl
 EXPOSE 8080
 VOLUME ["/usr/src/app"]
-CMD ["npm","run,"dev"]
+CMD ["npm","run,"release"]
