@@ -5,10 +5,10 @@ RUN apk add --no-cache git vim \
     && cd /usr/src/app \
     && git clone https://github.com/stephomi/sculptgl.git \
     && cd sculptgl \
-    && npm install -g ajv \
-    && npm install
+    && npm install \
+    && sed -ri -e "s/\\\\/\//g" /usr/src/app/sculptgl/package.json
 
 WORKDIR /usr/src/app/sculptgl
-EXPOSE 80
+EXPOSE 8080
 VOLUME ["/usr/src/app"]
 CMD ["npm","run,"dev"]
