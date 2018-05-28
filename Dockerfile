@@ -13,4 +13,4 @@ RUN apk add --no-cache git vim \
 WORKDIR /usr/src/app/sculptgl
 EXPOSE 8080
 VOLUME ["/usr/src/app"]
-CMD ["webpack-dev-server"]
+CMD ["./node_modules/.bin/webpack-dev-server"]
