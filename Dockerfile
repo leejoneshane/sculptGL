@@ -6,11 +6,11 @@ RUN apk add --no-cache git vim \
     && git clone https://github.com/stephomi/sculptgl.git \
     && cd sculptgl \
     && npm install \
-    && npm install -g webpack@^4.9.1 webpack-cli webpack-dev-server \
+    && npm install -g webpack@^4.9.1 webpack-cli webpack-dev-server --save-dev \
     && sed -ri -e "s!\\\\\\\\!/!g" /usr/src/app/sculptgl/package.json \
     && npm run release
 
 WORKDIR /usr/src/app/sculptgl
 EXPOSE 8080
 VOLUME ["/usr/src/app"]
-CMD ["webpack-dev-server --mode development"]
+CMD ["webpack-dev-server --mode development --no-inline"]
