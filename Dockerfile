@@ -17,4 +17,4 @@ ADD index.html /usr/src/app/sculptgl
 WORKDIR /usr/src/app/sculptgl
 EXPOSE 80
 VOLUME ["/usr/src/app"]
-CMD webpack-dev-server --disable-host-check --host 0.0.0.0 --port 80
+CMD webpack-dev-server --mode production --disable-host-check --host 0.0.0.0 --port 80
